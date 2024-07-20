@@ -12,6 +12,9 @@ public abstract class ItemMixin {
 
     @Shadow private int maxStackSize;
 
+    /**
+     * This just changes the max stack size of an item to 99 if it was previously 64
+     */
     @SuppressWarnings("UnreachableCode")
     @Inject(method = "getMaxStackSize()I", at = @At(value = "HEAD"), cancellable = true)
     public final void getMaxStackSize(CallbackInfoReturnable<Integer> cir) {
