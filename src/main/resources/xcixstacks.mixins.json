@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.nineteen.xcixstacks.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "xcixstacks.refmap.json",
+  "server": [
+  ],
+  "mixins": [
+    "ContainerMixin",
+    "ItemMixin"
+  ],
+  "client": [
+  ],
+  "minVersion": "0.8"
+}
